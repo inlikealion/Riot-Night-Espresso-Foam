@@ -1,6 +1,7 @@
 /*
 	@theme Riot Night
 	@override-placeholders html, xml, css, php, sourcecode.js
+	@author Matt Bainton ~ In Like A Lion
 */
 
 
@@ -46,11 +47,9 @@ square-brace {
 
 processing-instruction { color:#aeaeae; }
 
-/* 
------------------------------------------------------
-	ExpressionEngine Tags
------------------------------------------------------
-*/
+/* @end */
+
+/* @group ExpressionEngine */
 
 ee.tag > name, 
 ee.tag > punctuation,
@@ -70,19 +69,15 @@ ee.tag.self-closing > name,
 ee.tag.self-closing > punctuation, 
 ee.tag.self-closing attribute-name { color:#9ecffd; }
 
-/* 
------------------------------------------------------
-	HTML
------------------------------------------------------
-*/
+/* @end */
+
+/* @group HTML */
 
 html {spell-check:enabled;}
 
-/* 
------------------------------------------------------
-	CSS
------------------------------------------------------
-*/
+/* @end */
+
+/* @group CSS */
 
 css selector.css 						{ color:#ff137c; } /*#ff2b89*/
 css property-list > property-value 		{ color:#8af299; }
@@ -131,11 +126,33 @@ css variable.parameter.misc { color: #61435f; }
 css zkeyword.other.italic 	{ font-style:italic; }
 css zkeyword.other.bold		{ font-weight:bold; }
 
-/* 
------------------------------------------------------
-	PHP
------------------------------------------------------
-*/
+/* @end */
+
+/* @group Javascript */
+
+invalid {
+	background-color: #f93232;
+	}
+
+js keyword, js storage {
+	color: #ff137c;
+}
+
+js constant {
+	color: #CDDE87;
+}
+
+js > operator {
+	color: #fff;
+}
+
+embedded.js {
+	background: #24211D;
+}
+
+/* @end */
+
+/* @group PHP */
 
 php,
 operator { 
@@ -222,14 +239,4 @@ integral {
 	background:#0C1021;
 	}
 
-
-/* 
------------------------------------------------------
-	JS
------------------------------------------------------
-*/
-
-invalid {
-	background-color: #f93232;
-	}
-
+/* @end */
